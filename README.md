@@ -1,9 +1,14 @@
 # mmcdrools
 
 For the project following things need to be installed:
-1. Maven
-2. Spring boot(to use the dependencies) #not compulsorily
-3. java jdk 
+1. eclipse 
+   link: https://www.eclipse.org/downloads/packages/release/neon/3/eclipse-ide-java-ee-developers
+2. Maven
+   link: https://maven.apache.org/download.cgi
+3. Spring boot(to use the dependencies) #not compulsorily
+   If want, download from eclipse marketplace
+4. java jdk 
+   Link: https://www.oracle.com/in/java/technologies/javase-jdk15-downloads.html
 
 Steps followed for project:
 1. Create a maven project in eclipse.
