@@ -1,0 +1,22 @@
+import  com.springhow.examples.drools.domain.OrderRequest;
+
+rule "Message for sugarlevel above 140 mdl"
+    when
+        orderObject : OrderRequest(sugarLevel > 140 );
+    then
+        orderObject.setMessage("Walk 30 min daily");
+end;
+
+rule "Message for sugarlevel between 110 mdl and 1140 mdl"
+    when
+        orderObject : OrderRequest( sugarLevel >110  && sugarLevel < 140 );
+    then
+        orderObject.setMessage("Great job keep up the routine");
+end;
+
+rule "Message for sugarlevel below 110 mdl"
+    when
+        orderObject : OrderRequest( sugarLevel < 110 );
+    then
+        orderObject.setMessage("eat one fruit daily");
+end;
